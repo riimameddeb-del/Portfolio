@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#0b0d12" />
+<title>Rima Meddeb — Portfolio développeuse de jeux</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap');
+:root{--bg:#0b0d12;--panel:#12151d;--panel2:#171b25;--line:#2a303d;--text:#f3f5fa;--muted:#9ba4b5;--lime:#c8ff42;--cyan:#6be7f2;--orange:#ff805d;--mono:'DM Mono',monospace;--display:'Barlow Condensed',sans-serif;--body:'Inter',sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.22;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:46px 46px}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}.mono{font-family:var(--mono);text-transform:uppercase;letter-spacing:.12em;font-size:11px;color:var(--muted)}a{color:inherit;text-decoration:none}.topbar{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font:800 25px var(--display);letter-spacing:.03em}.brand span{color:var(--lime)}.nav{display:flex;gap:28px;align-items:center;font-size:12px;color:#c4c9d4}.nav a:hover{color:var(--lime)}.nav .nav-cta{border:1px solid #4a5261;padding:11px 15px;color:var(--lime)}.hero{padding:82px 0 66px;display:grid;grid-template-columns:1.12fr .88fr;gap:50px;align-items:center}.eyebrow{display:flex;align-items:center;gap:10px;color:var(--lime);font:11px var(--mono);letter-spacing:.12em;text-transform:uppercase}.dot{width:7px;height:7px;background:var(--lime);border-radius:50%;box-shadow:0 0 15px #c8ff4280}.hero h1{font:900 clamp(64px,9vw,112px)/.84 var(--display);letter-spacing:-.035em;margin:24px 0 25px;text-transform:uppercase}.hero h1 em{font-style:normal;color:var(--lime);display:block}.hero-copy{max-width:510px;color:#aeb6c5;line-height:1.8;font-size:14px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 18px;font:11px var(--mono);letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);background:transparent;color:var(--text);cursor:pointer;transition:.2s}.btn.primary{background:var(--lime);color:#10130a;border-color:var(--lime);font-weight:500}.btn:hover{transform:translateY(-2px);border-color:var(--lime)}.hero-art{position:relative;min-height:365px;border:1px solid #343b4a;background:radial-gradient(ellipse at 50% 45%,#293442 0%,#171c27 43%,#11141b 74%);display:flex;align-items:center;justify-content:center;overflow:hidden}.hero-art:before,.hero-art:after{content:"";position:absolute;border:1px solid #65708445;border-radius:50%;width:290px;height:290px;transform:rotate(-24deg) scaleY(.42)}.hero-art:after{width:370px;height:370px;transform:rotate(40deg) scaleY(.42)}.crosshair{position:absolute;width:100%;height:1px;background:#ffffff0b;top:50%}.crosshair:after{content:"";position:absolute;height:100%;width:1px;background:#ffffff0b;left:50%}.orb{width:138px;height:138px;border-radius:34% 66% 58% 42% / 40% 39% 61% 60%;background:linear-gradient(140deg,#d7ff70 0%,#8bbd2b 35%,#263f26 75%,#101712 100%);box-shadow:inset -18px -20px 35px #0009,inset 9px 9px 24px #f5ffb966,0 0 65px #b8ff3340;transform:rotate(-25deg);animation:float 5s ease-in-out infinite;z-index:1}.orb:after{content:"";display:block;width:42px;height:18px;background:#fff7;border-radius:50%;filter:blur(8px);transform:translate(35px,22px) rotate(-30deg)}@keyframes float{0%,100%{transform:translateY(0) rotate(-25deg)}50%{transform:translateY(-14px) rotate(-10deg)}}.art-label{position:absolute;z-index:2}.art-label.top{top:20px;left:20px}.art-label.bottom{bottom:20px;right:20px;text-align:right}.art-label strong{display:block;color:var(--lime);font:700 12px var(--mono);margin-top:5px}.art-index{position:absolute;bottom:18px;left:20px;font:700 44px var(--display);color:#ffffff12}.ticker{border-block:1px solid var(--line);padding:17px 0;overflow:hidden;color:#9ca5b5;font:10px var(--mono);letter-spacing:.15em;white-space:nowrap}.ticker-inner{display:flex;justify-content:space-around;gap:35px}.ticker b{color:var(--lime);font-weight:400}.section{padding:83px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px}.kicker{color:var(--lime);font:11px var(--mono);letter-spacing:.14em;text-transform:uppercase}.section h2{font:800 clamp(42px,6vw,64px)/.95 var(--display);text-transform:uppercase;margin:10px 0 0;letter-spacing:-.02em}.section-intro{max-width:350px;color:var(--muted);font-size:12px;line-height:1.7}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0 27px}.filter{padding:9px 12px;border:1px solid var(--line);background:transparent;color:#aab2c1;font:10px var(--mono);text-transform:uppercase;cursor:pointer}.filter.active,.filter:hover{background:var(--lime);color:#111;border-color:var(--lime)}.projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.project{background:var(--panel);border:1px solid var(--line);min-width:0;transition:border-color .2s,transform .2s}.project:hover{border-color:#64704a;transform:translateY(-3px)}.project-media{aspect-ratio:16/9;position:relative;background:linear-gradient(135deg,#202a38,#131720);overflow:hidden;display:flex;align-items:center;justify-content:center}.project-media:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 49.8%,#ffffff0a 50%,transparent 50.2%),linear-gradient(45deg,transparent 49.8%,#ffffff0a 50%,transparent 50.2%);background-size:32px 32px}.project-media img,.project-media video{position:absolute;width:100%;height:100%;object-fit:cover}.media-placeholder{position:relative;text-align:center;padding:22px;color:#d8deea;z-index:1}.media-placeholder .play{width:48px;height:48px;display:grid;place-items:center;margin:0 auto 15px;border:1px solid #c8ff4280;border-radius:50%;color:var(--lime);font-size:17px}.media-placeholder strong{display:block;font:700 19px var(--display);text-transform:uppercase;letter-spacing:.05em}.media-placeholder small{display:block;font:10px var(--mono);color:#8792a4;margin-top:8px}.project-no{position:absolute;left:16px;top:14px;font:10px var(--mono);color:#e6ebf2;z-index:2}.project-type{position:absolute;right:13px;top:12px;background:#0b0d12cc;border:1px solid #ffffff24;padding:7px 9px;font:9px var(--mono);color:var(--lime);z-index:2}.project-body{padding:22px}.project-title-row{display:flex;justify-content:space-between;align-items:start;gap:14px}.project h3{font:700 29px/.98 var(--display);text-transform:uppercase;margin:0 0 10px}.project-description{font-size:12px;line-height:1.8;color:#a8b1c0;margin:10px 0 17px;min-height:43px}.tags{display:flex;flex-wrap:wrap;gap:6px}.tag{font:9px var(--mono);color:#aab4c4;background:#1b202b;border:1px solid #303747;padding:6px 8px}.project-links{display:flex;gap:10px;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:20px;padding-top:16px}.project-link{font:10px var(--mono);color:var(--lime);display:inline-flex;align-items:center;gap:7px}.project-link:hover{text-decoration:underline}.empty-link{color:#737f91}.add-card{border:1px dashed #3b4555;min-height:400px;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;background:#0e1118;cursor:pointer;transition:.2s}.add-card:hover{border-color:var(--lime);background:#131820}.add-symbol{font-size:36px;color:var(--lime);margin-bottom:16px}.add-card h3{font:700 28px var(--display);text-transform:uppercase;margin:0 0 10px}.add-card p{font-size:12px;color:var(--muted);line-height:1.7;max-width:240px}.add-card .btn{margin-top:12px}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:start}.about-stamp{border:1px solid var(--line);padding:25px;background:var(--panel);min-height:230px;display:flex;flex-direction:column;justify-content:space-between}.about-stamp .big{font:900 75px/.8 var(--display);color:var(--lime)}.about-stamp p{font:10px var(--mono);color:var(--muted);line-height:1.8}.about-copy{font-size:14px;line-height:1.95;color:#aeb6c5}.about-copy strong{color:#f3f5fa;font-weight:600}.skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:25px}.skill{border:1px solid var(--line);padding:14px;background:#10131a}.skill span{font:10px var(--mono);color:var(--lime)}.skill strong{display:block;font:600 13px var(--body);margin-top:8px}.contact{background:var(--lime);color:#10130a;padding:50px;display:flex;align-items:center;justify-content:space-between;gap:30px}.contact .kicker{color:#36451c}.contact h2{font:900 clamp(43px,6vw,70px)/.9 var(--display);text-transform:uppercase;margin:12px 0}.contact p{font-size:12px;max-width:440px;line-height:1.8;color:#33401d}.contact .btn{border-color:#10130a;color:#10130a}.contact .btn:hover{background:#10130a;color:var(--lime)}footer{padding:28px 0;display:flex;justify-content:space-between;gap:20px;color:#7f8999;font:10px var(--mono);text-transform:uppercase;letter-spacing:.08em}.modal-backdrop{position:fixed;inset:0;background:#050609d9;z-index:20;display:none;align-items:center;justify-content:center;padding:20px;overflow:auto}.modal-backdrop.open{display:flex}.modal{width:min(680px,100%);background:#12151d;border:1px solid #394252;padding:28px;max-height:92vh;overflow:auto;box-shadow:0 25px 90px #0009}.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}.modal h2{font:800 34px var(--display);text-transform:uppercase;margin:0}.close{border:1px solid var(--line);background:transparent;color:white;width:36px;height:36px;cursor:pointer;font-size:20px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font:10px var(--mono);color:#aeb6c5;text-transform:uppercase;letter-spacing:.08em}.field input,.field textarea,.field select{width:100%;background:#0b0d12;border:1px solid #303747;color:#f3f5fa;padding:12px;font:12px var(--body);outline:none}.field input:focus,.field textarea:focus{border-color:var(--lime)}.field textarea{min-height:90px;resize:vertical}.hint{font:10px var(--mono);color:#778295;line-height:1.6}.modal-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:22px}.toast{position:fixed;bottom:20px;right:20px;z-index:30;background:var(--lime);color:#10130a;padding:13px 18px;font:11px var(--mono);display:none}.toast.show{display:block}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding:60px 0 48px;gap:30px}.hero-art{min-height:290px}.projects{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr;gap:20px}.skill-grid{grid-template-columns:repeat(2,1fr)}.contact{padding:32px;align-items:flex-start;flex-direction:column}.section{padding:60px 0}.section-head{align-items:flex-start;flex-direction:column}.nav{gap:12px}.nav a:not(.nav-cta){display:none}}@media(max-width:500px){.wrap{width:calc(100% - 28px)}.topbar{height:65px}.hero h1{font-size:66px}.hero-art{min-height:255px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.modal{padding:20px}.project-body{padding:17px}footer{flex-direction:column}.ticker-inner{justify-content:flex-start}.ticker-inner span{flex-shrink:0}.contact{padding:25px}}
+</style>
+</head>
+<body>
+<header class="wrap topbar">
+  <a class="brand" href="#home">RIMA<span>_</span>MEDDEB<span>.</span></a>
+  <nav class="nav"><a href="#work">PROJETS</a><a href="#about">À PROPOS</a><a href="#skills">COMPÉTENCES</a><a class="nav-cta" href="#contact">CONTACT ↗</a></nav>
+</header>
+<main>
+<section class="wrap hero" id="home">
+  <div>
+    <div class="eyebrow"><span class="dot"></span> DÉVELOPPEUSE DE JEUX / UNITY</div>
+    <h1>FAIT POUR<br>ÊTRE <em>JOUÉ.</em></h1>
+    <p class="hero-copy">Je transforme des idées en expériences interactives avec Unity : mécaniques de jeu, niveaux, menus animés et jeux jouables directement dans le navigateur.</p>
+    <div class="hero-actions"><a class="btn primary" href="#work">VOIR MON PROJET ↘</a><a class="btn" href="#contact">ME CONTACTER ↗</a></div>
+  </div>
+  <div class="hero-art" aria-label="Abstract lime 3D orb artwork">
+    <div class="crosshair"></div><div class="orb"></div>
+    <div class="art-label top"><span class="mono">MODE ACTUEL</span><strong>CRÉATION / ON</strong></div>
+    <div class="art-label bottom"><span class="mono">CRÉER DES MONDES</span><strong>UNE IMAGE À LA FOIS</strong></div>
+    <div class="art-index">001</div>
+  </div>
+</section>
+<div class="ticker"><div class="wrap ticker-inner"><span>GAMEPLAY <b>✳</b></span><span>UNITY 2D <b>✳</b></span><span>C# <b>✳</b></span><span>WEBGL <b>✳</b></span><span>PLATEFORME <b>✳</b></span><span>GAMEPLAY <b>✳</b></span></div></div>
+
+<section class="wrap section" id="work">
+  <div class="section-head"><div><div class="kicker">01 / PROJETS</div><h2>LE TERRAIN DE JEU<span style="color:var(--lime)">.</span></h2></div><p class="section-intro">Mon projet de cours : un jeu de plateforme 2D en trois niveaux, jouable en ligne, avec la vidéo de présentation et le code source.</p></div>
+  <div class="filters" id="filters"><button class="filter active" data-filter="All">TOUS</button><button class="filter" data-filter="Game">JEUX</button><button class="filter" data-filter="VR / AR">VR / AR</button><button class="filter" data-filter="Prototype">PROTOTYPES</button><button class="filter" data-filter="Tools">TOOLS</button></div>
+  <div class="projects" id="projects"></div>
+</section>
+
+<section class="wrap section" id="about">
+  <div class="section-head"><div><div class="kicker">02 / PROFIL</div><h2>PLUS QUE<br>DU CODE.</h2></div></div>
+  <div class="about-grid">
+    <div class="about-stamp"><div class="mono">JOURNAL / PROFIL_001</div><div class="big">DES IDÉES<br>EN<br>JEU.</div><p>CONCEVOIR // ITÉRER // PUBLIER</p></div>
+    <div><div class="about-copy"><p>Bonjour, je suis <strong>Rima Meddeb</strong>, étudiante et développeuse de jeux. J'aime le moment où une mécanique fonctionne, où un monde paraît vivant et où le joueur oublie qu'il tient une manette.</p><p>Je travaille sur la <strong>programmation de gameplay, le prototypage, la création de niveaux et le déploiement de jeux mobiles et WebGL</strong>. J'aime rendre les idées concrètes rapidement, les tester, puis soigner les détails.</p><p><strong>Ma règle :</strong> d'abord jouable, ensuite agréable, puis inoubliable.</p></div>
+    <div class="skill-grid" id="skills"><div class="skill"><span>01 / MOTEUR</span><strong>Unity</strong></div><div class="skill"><span>02 / CODE</span><strong>C#</strong></div><div class="skill"><span>03 / DESIGN</span><strong>Systèmes de gameplay</strong></div><div class="skill"><span>04 / DÉPLOIEMENT</span><strong>WebGL / Mobile</strong></div></div></div>
+  </div>
+</section>
+
+<section class="wrap section" id="contact">
+  <div class="contact"><div><div class="kicker">03 / CONTACT</div><h2>UN PROJET<br>À CRÉER ?</h2><p>Une idée de projet, une collaboration, un jeu à améliorer ? Écris-moi.</p></div><a class="btn" href="mailto:riima.meddeb@gmail.com" id="emailLink">M'ÉCRIRE ↗</a></div>
+</section>
+</main>
+<footer class="wrap"><span>© <span id="year"></span> RIMA MEDDEB / PORTFOLIO</span><span>CONÇU PAR CURIOSITÉ. FAIT POUR JOUER.</span><a href="#home">HAUT DE PAGE ↑</a></footer>
+
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <div class="modal-head"><div><div class="kicker">PROJECT EDITOR / NEW ENTRY</div><h2 id="modalTitle">ADD A PROJECT</h2></div><button class="close" id="closeModal" aria-label="Close">×</button></div>
+    <form id="projectForm">
+      <div class="form-grid">
+        <div class="field"><label for="pTitle">Project title *</label><input id="pTitle" required placeholder="e.g. Neon Drift"/></div>
+        <div class="field"><label for="pType">Category</label><select id="pType"><option>Game</option><option>VR / AR</option><option>Prototype</option><option>Tools</option></select></div>
+        <div class="field full"><label for="pDescription">Description</label><textarea id="pDescription" placeholder="What is it? What did you build? What makes it special?"></textarea></div>
+        <div class="field"><label for="pVideo">Video / trailer URL</label><input id="pVideo" type="url" placeholder="YouTube / Vimeo / MP4 URL"/></div>
+        <div class="field"><label for="pImage">Cover image URL</label><input id="pImage" type="url" placeholder="https://..."/></div>
+        <div class="field"><label for="pGithub">GitHub / source code URL</label><input id="pGithub" type="url" placeholder="https://github.com/..."/></div>
+        <div class="field"><label for="pPlay">Play / download URL</label><input id="pPlay" type="url" placeholder="Itch.io / Steam / build"/></div>
+        <div class="field"><label for="pTech">Tech stack (comma separated)</label><input id="pTech" placeholder="Unreal Engine, C++, Blender"/></div>
+        <div class="field"><label for="pYear">Year / status</label><input id="pYear" placeholder="2026 · In development"/></div>
+        <div class="field full"><label for="pRole">My role / contribution</label><input id="pRole" placeholder="Gameplay programming, level design, tools..."/></div>
+      </div>
+      <p class="hint">Tip: Add a YouTube or Vimeo URL to show a video embed. Leave any field empty if it doesn't apply. Projects you add here stay in this page session; edit the PROJECTS array in the source code to make them permanent.</p>
+      <div class="modal-actions"><button type="button" class="btn" id="cancelModal">CANCEL</button><button type="submit" class="btn primary">ADD TO PORTFOLIO +</button></div>
+    </form>
+  </div>
+</div>
+<div class="toast" id="toast">PROJET AJOUTÉ</div>
+<script>
+/* ==========================================================
+   CUSTOMIZE YOUR PORTFOLIO
+   Duplicate a project object below to add as many projects as you want.
+   video: YouTube/Vimeo/MP4 URL | image: cover image URL
+   github: source repository | play: playable build / store page
+   ========================================================== */
+const PROJECTS = [
+  {
+    title: "Journey Sesame",
+    type: "Game",
+    description: "Jeu de plateforme 2D en trois niveaux inspirés de l'université. Le joueur choisit son personnage puis son arme, ramasse toutes les pièces, élimine les ennemis, évite les obstacles et atteint la ligne d'arrivée avant la fin du temps. Menus animés, fonds vidéo, musique, 3 vies et sauvegarde de la progression.",
+    video: "", // Colle ici le lien YouTube de ta vidéo de présentation
+    image: "", // Colle ici le lien d'une image de couverture (capture du jeu)
+    github: "https://github.com/riimameddeb-del/JourneySesame",
+    play: "https://riimameddeb-del.itch.io/journey-sesame",
+    tech: ["Unity 2D", "C#", "WebGL"],
+    year: "2026 · Projet de cours",
+    role: "Conception, intégration et gameplay (programmation avec Claude AI)"
+  }
+];
+
+let currentFilter = "All";
+const projectsEl = document.getElementById("projects");
+const escapeHTML = value => String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function videoEmbed(url) {
+  if (!url) return "";
+  try {
+    const u = new URL(url);
+    if (u.hostname.includes("youtu.be")) return `https://www.youtube-nocookie.com/embed/${u.pathname.slice(1)}`;
+    if (u.hostname.includes("youtube.com")) {
+      const id = u.searchParams.get("v") || u.pathname.split("/").filter(Boolean).pop();
+      return id ? `https://www.youtube-nocookie.com/embed/${id}` : "";
+    }
+    if (u.hostname.includes("vimeo.com")) {
+      const id = u.pathname.split("/").filter(Boolean).pop();
+      return id ? `https://player.vimeo.com/video/${id}` : "";
+    }
+    if (/\.(mp4|webm|ogg)(\?.*)?$/i.test(u.pathname + u.search)) return url;
+  } catch (_) {}
+  return "";
+}
+function renderProjects() {
+  const filtered = PROJECTS.filter(p => currentFilter === "All" || p.type === currentFilter);
+  const cards = filtered.map((p) => {
+    const i = PROJECTS.indexOf(p) + 1;
+    const embed = videoEmbed(p.video);
+    let media = "";
+    if (embed && /\.(mp4|webm|ogg)(\?.*)?$/i.test(embed)) {
+      media = `<video controls preload="metadata" poster="${escapeHTML(p.image)}" src="${escapeHTML(embed)}"></video>`;
+    } else if (embed) {
+      media = `<iframe title="${escapeHTML(p.title)} trailer" src="${escapeHTML(embed)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0;z-index:3"></iframe>`;
+    } else if (p.image) {
+      media = `<img src="${escapeHTML(p.image)}" alt="${escapeHTML(p.title)} cover" loading="lazy" onerror="this.style.display='none'">`;
+    }
+    const tags = (p.tech || []).filter(Boolean).map(t => `<span class="tag">${escapeHTML(t)}</span>`).join("");
+    const links = [
+      p.github ? `<a class="project-link" href="${escapeHTML(p.github)}" target="_blank" rel="noopener noreferrer">⌘ CODE SOURCE ↗</a>` : `<span class="project-link empty-link">⌘ SOURCE CODE — ADD URL</span>`,
+      p.play ? `<a class="project-link" href="${escapeHTML(p.play)}" target="_blank" rel="noopener noreferrer">▶ JOUER ↗</a>` : ""
+    ].filter(Boolean).join("");
+    return `<article class="project">
+      <div class="project-media"><span class="project-no">BUILD_${String(i).padStart(2,"0")}</span><span class="project-type">${escapeHTML(p.type || "PROJECT")}</span>${media}<div class="media-placeholder" ${media ? 'style="display:none"' : ""}><div class="play">▶</div><strong>Vidéo de présentation</strong><small>AJOUTE TON LIEN YOUTUBE ICI</small></div></div>
+      <div class="project-body"><div class="project-title-row"><div><h3>${escapeHTML(p.title || "Untitled Project")}</h3><div class="mono">${escapeHTML(p.year || "YEAR / STATUS")}</div></div></div>
+      <p class="project-description">${escapeHTML(p.description || "Add a short description of the project, the gameplay, and the problem you solved.")}</p>
+      <div class="tags">${tags || '<span class="tag">ADD TECH STACK</span>'}</div>
+      ${p.role ? `<p class="mono" style="margin:15px 0 0">MON RÔLE // <span style="color:#dce2ec">${escapeHTML(p.role)}</span></p>` : ""}
+      <div class="project-links">${links || '<span class="project-link empty-link">ADD GITHUB / PLAY LINKS IN THE PROJECT DATA</span>'}</div>
+      </div></article>`;
+  }).join("");
+  projectsEl.innerHTML = cards + `<button class="add-card" id="addProjectCard" type="button"><div><div class="add-symbol">＋</div><h3>Next project?</h3><p>New game, prototype, tool, or immersive experiment. Add it here using the same structure.</p><span class="btn primary">ADD PROJECT +</span></div></button>`;
+  document.getElementById("addProjectCard").addEventListener("click", openModal);
+}
+document.getElementById("filters").addEventListener("click", e => {
+  const btn = e.target.closest("[data-filter]");
+  if (!btn) return;
+  currentFilter = btn.dataset.filter;
+  document.querySelectorAll(".filter").forEach(b => b.classList.toggle("active", b === btn));
+  renderProjects();
+});
+const backdrop = document.getElementById("modalBackdrop");
+function openModal(){backdrop.classList.add("open");document.getElementById("pTitle").focus()}
+function closeModal(){backdrop.classList.remove("open")}
+document.getElementById("closeModal").addEventListener("click", closeModal);
+document.getElementById("cancelModal").addEventListener("click", closeModal);
+backdrop.addEventListener("click", e => {if(e.target === backdrop) closeModal()});
+document.addEventListener("keydown", e => {if(e.key === "Escape") closeModal()});
+document.getElementById("projectForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const val = id => document.getElementById(id).value.trim();
+  PROJECTS.push({
+    title: val("pTitle"), type: val("pType"), description: val("pDescription"),
+    video: val("pVideo"), image: val("pImage"), github: val("pGithub"), play: val("pPlay"),
+    tech: val("pTech").split(",").map(s=>s.trim()).filter(Boolean),
+    year: val("pYear"), role: val("pRole")
+  });
+  currentFilter = "All";
+  document.querySelectorAll(".filter").forEach(b => b.classList.toggle("active", b.dataset.filter === "All"));
+  renderProjects(); closeModal(); e.target.reset();
+  const toast = document.getElementById("toast"); toast.classList.add("show"); setTimeout(()=>toast.classList.remove("show"),2200);
+  document.getElementById("work").scrollIntoView({behavior:"smooth"});
+});
+document.getElementById("year").textContent = new Date().getFullYear();
+/* QUICK PERSONALIZATION: change this email to your own. */
+document.getElementById("emailLink").href = "mailto:hello@example.com";
+renderProjects();
+</script>
+</body>
+</html>
